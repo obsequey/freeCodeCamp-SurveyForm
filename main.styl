@@ -1,0 +1,69 @@
+bgcolor = mediumslateblue
+formcolor = lavender
+submitcolor = thistle
+submithovercolor = plum
+*
+  box-sizing border-box
+  padding 0
+  margin 0
+  list-style none
+  text-decoration none
+  color black
+html
+  font-family 'Open Sans', sans-serif
+  background-color bgcolor
+  font-size 15px
+  text-align center
+  padding 0 0 1rem 0
+h1
+  margin 1rem
+form
+  background-color formcolor
+  border-radius: 3px
+  width 80vw
+  margin 0 auto
+  padding 1rem 2rem
+  .description
+    margin 0 1rem
+  .row
+    margin 1rem 0
+    display flex
+    flex-direction column
+    @media (min-width 520px)
+      flex-direction row
+    &__left-side
+      text-align: left
+      @media (min-width 520px)
+        flex 1
+        text-align right
+        margin 0 1rem 0 0
+      .label
+        padding .5rem 0
+    &__right-side
+      @media (min-width 520px)
+        flex 1
+      .input
+        width 100%
+        padding .5rem
+        border 1px solid gray
+      select
+        width 100%
+        padding .5rem
+        border 1px solid gray
+      ul
+        text-align left
+      textarea
+        width 100%
+        padding .5rem 0 2rem .5rem
+        border-radius 3px
+        border 1px solid gray
+        resize: vertical
+  button
+    padding .5rem 1rem
+    border none
+    background-color submitcolor
+    border-radius: 3px
+    cursor pointer
+    transition background-color .3s ease-in-out
+    &:hover
+      background-color submithovercolor
