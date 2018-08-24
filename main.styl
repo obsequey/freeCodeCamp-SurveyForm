@@ -23,6 +23,7 @@ form
   width 80vw
   margin 0 auto
   padding 1rem 2rem
+  max-width 920px
   .description
     margin 0 1rem
   .row
@@ -36,28 +37,33 @@ form
       @media (min-width 520px)
         flex 1
         text-align right
-        margin 0 1rem 0 0
-      .label
-        padding .5rem 0
+        margin .2rem 1rem 0 0
     &__right-side
       @media (min-width 520px)
         flex 1
       .input
         width 100%
-        padding .5rem
+        padding .4rem .5rem .5rem .5rem
         border 1px solid gray
+        margin .3rem 0 0 0
+        @media (min-width 520px)
+          margin 0
       select
         width 100%
-        padding .5rem
+        padding .4rem .5rem .5rem .5rem
         border 1px solid gray
+        margin .3rem 0 0 0
       ul
         text-align left
+        margin .3rem 0 0 0
       textarea
         width 100%
-        padding .5rem 0 2rem .5rem
+        padding .3rem .5rem .5rem .5rem
+        height 5rem
         border-radius 3px
         border 1px solid gray
         resize: vertical
+        margin .5rem 0 0 0
   button
     padding .5rem 1rem
     border none
